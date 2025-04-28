@@ -1,34 +1,51 @@
-<style>
-.telegram-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #0088cc;
-  color: white;
-  padding: 14px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: background-color 0.3s ease;
-  z-index: 9999;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dayan Academy — Telegram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-.telegram-button:hover {
-  background-color: #006699;
-}
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
 
-@media (max-width: 600px) {
-  .telegram-button {
-    padding: 12px 20px;
-    font-size: 14px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
-</style>
+    a.telegram-link {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #0088cc;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
 
-<a href="https://t.me/adilkaiv" target="_blank" class="telegram-button">
-  ✈️ Написать в Telegram
-</a>
+    a.telegram-link:hover {
+      background-color: #006699;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Свяжитесь с нами в Telegram</h1>
+  <a href="https://t.me/adilkaiv" target="_blank" class="telegram-link">Перейти в Telegram</a>
+
+</body>
+</html>
