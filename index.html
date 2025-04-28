@@ -1,19 +1,34 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dayan Academy</title>
-  <!-- Здесь могут быть стили сайта -->
-</head>
-<body>
+<style>
+.telegram-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0088cc;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
 
-  <!-- Здесь твой основной контент сайта -->
+.telegram-button:hover {
+  background-color: #006699;
+}
 
-  <!-- Кнопка написать в Telegram -->
-  <a href="https://t.me/adilkaivМ" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#0088cc;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;box-shadow:0 4px 8px rgba(0,0,0,0.2);font-weight:bold;z-index:999;">
-    ✈️ Написать в Telegram
-  </a>
+@media (max-width: 600px) {
+  .telegram-button {
+    padding: 12px 20px;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+</style>
 
-</body>
-</html>
+<a href="https://t.me/adilkaiv" target="_blank" class="telegram-button">
+  ✈️ Написать в Telegram
+</a>
