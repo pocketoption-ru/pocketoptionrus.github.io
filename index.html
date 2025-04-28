@@ -8,32 +8,66 @@
     body {
       margin: 0;
       padding: 0;
-      background: #ffffff;
+      background: #1a1a1a; /* Тёмный фон страницы */
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: #333333; /* Тёмно-серая карточка */
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       text-align: center;
+      max-width: 360px;
+      width: 90%;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%; /* Круглый логотип */
+      margin-bottom: 20px;
+      border: 3px solid #ffffff; /* Белая рамка вокруг логотипа */
     }
 
     h1 {
       font-size: 24px;
-      color: #333;
-      margin-bottom: 20px;
+      color: #ffffff; /* Белый заголовок */
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #cccccc; /* Светло-серый текст */
+      margin-bottom: 30px;
     }
 
     a.telegram-link {
       display: inline-block;
-      padding: 15px 30px;
+      padding: 14px 28px;
       font-size: 18px;
       color: white;
       background-color: #0088cc;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
       transition: background-color 0.3s ease;
     }
 
@@ -44,8 +78,13 @@
 </head>
 <body>
 
-  <h1>Свяжитесь с нами в Telegram</h1>
-  <a href="https://t.me/adilkaiv" target="_blank" class="telegram-link">Перейти в Telegram</a>
+  <div class="card">
+    <img src="logo.png" alt="Dayan Academy" class="logo">
+    <h1>ХОЧЕШЬ БЕСПЛАТНО НАУЧИТЬСЯ ТРЕЙДИНГУ?</h1>
+    <p>Научим вас - Зарабатывать на трейдинге с нуля , Для этого вам нужен только телефон и попасть к нам в команду.</p>
+    <a href="https://t.me/adilkaiv" target="_blank" class="telegram-link">Написать в Telegram</a>
+  </div>
 
 </body>
 </html>
+
